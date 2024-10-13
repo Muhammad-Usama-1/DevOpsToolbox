@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;  /* Ensure all elements respect the width */
+}
+
+.container {
+    width: 100%; /* Take full width */
+    max-width: 90%; /* Max width for large screens */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for some space around the edges */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.active {
+    background-color: #0056b3;
+}
+
+.toolbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between items */
+}
+
+.category {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px; /* Adjust flex-basis to allow items to wrap nicely */
+    max-width: 48%; /* Ensure items don't grow too large on larger screens */
+}
+
+.category h2 {
+    color: #555;
+}
+
+.tool {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tool a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.tool a:hover {
+    text-decoration: underline;
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 768px) {
+    .category {
+        width: 100%; /* Take full width on smaller screens */
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
