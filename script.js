@@ -2,7 +2,7 @@ const toolbox = document.getElementById('toolbox');
 const filterButtons = document.getElementById('filter-buttons');
 
 // URL of your JSON file hosted on GitHub
-const jsonUrl = 'https://raw.githubusercontent.com/Muhammad-Usama-1/DevOpsToolbox/refs/heads/master/data.json';
+const jsonUrl = 'https://gist.githubusercontent.com/Muhammad-Usama-1/a7ad73a2be2d0912606fd6df13cd5df3/raw/toolbox.json';
 
 let allData = [];
 let categories = new Set();  // Keep track of categories dynamically
@@ -88,3 +88,4 @@ function filterByCategory(categoryName) {
   const filteredData = allData.filter(tool => tool.category === categoryName);
   displayTools(filteredData);
 }
+
